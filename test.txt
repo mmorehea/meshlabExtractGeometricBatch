@@ -1,0 +1,12 @@
+Input mesh  /home/mdm/code/meshlabExtractGeometricBatch/./meshes/c16in1.obj
+script /home/mdm/code/meshlabExtractGeometricBatch/./geo.mlx
+Loading Plugins:
+Total 227 filtering actions
+Total 13 io plugins
+Mesh c16in1.obj loaded has 15592 vn 31452 fn
+Apply FilterScript: '/home/mdm/code/meshlabExtractGeometricBatch/./geo.mlx'
+Starting Script of 3 actionsfilter: Merge Close Vertices
+Successfully merged 0 vertices
+filter: Remove Faces from Non Manifold Edges
+Successfully removed 0 folded faces
+filter: Transform: Scale

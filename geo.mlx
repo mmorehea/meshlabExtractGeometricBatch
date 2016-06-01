@@ -1,0 +1,19 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Merge Close Vertices">
+  <Param min="0" max="2.21482" description="Merging distance" value="0.022148" type="RichAbsPerc" tooltip="All the vertices that closer than this threshold are merged together. Use very small values, default values is 1/10000 of bounding box diagonal. " name="Threshold"/>
+ </filter>
+ <filter name="Remove Faces from Non Manifold Edges"/>
+ <filter name="Transform: Scale">
+  <Param description="X Axis" name="axisX" value="0.132" type="RichFloat" tooltip="Scaling"/>
+  <Param description="Y Axis" name="axisY" value="0.132" type="RichFloat" tooltip="Scaling"/>
+  <Param description="Z Axis" name="axisZ" value="0.132" type="RichFloat" tooltip="Scaling"/>
+  <Param description="Uniform Scaling" name="uniformFlag" value="true" type="RichBool" tooltip="If selected an uniform scaling (the same for all the three axis) is applied (the X axis value is used)"/>
+  <Param description="Center of scaling:" name="scaleCenter" enum_cardinality="3" enum_val0="origin" enum_val1="barycenter" enum_val2="custom point" value="1" type="RichEnum" tooltip="Choose a method"/>
+  <Param description="Custom center" name="customCenter" type="RichPoint3f" tooltip="This scaling center is used only if the 'custom point' option is chosen." x="0" y="0" z="0"/>
+  <Param description="Scale to Unit bbox" name="unitFlag" value="false" type="RichBool" tooltip="If selected, the object is scaled to a box whose sides are at most 1 unit lenght"/>
+  <Param description="Freeze Matrix" name="Freeze" value="true" type="RichBool" tooltip="The transformation is explicitly applied and the vertex coords are actually changed"/>
+  <Param description="Apply to all layers" name="ToAll" value="true" type="RichBool" tooltip="The transformation is explicitly applied to all the mesh and raster layers in the project"/>
+ </filter>
+ <xmlfilter name="Compute Geometric Measures"/>
+</FilterScript>

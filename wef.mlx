@@ -1,0 +1,7 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <filter name="Merge Close Vertices">
+  <Param min="0" max="2.21482" description="Merging distance" value="0.022148" type="RichAbsPerc" tooltip="All the vertices that closer than this threshold are merged together. Use very small values, default values is 1/10000 of bounding box diagonal. " name="Threshold"/>
+ </filter>
+ <xmlfilter name="Compute Geometric Measures"/>
+</FilterScript>
